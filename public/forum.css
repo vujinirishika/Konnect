@@ -1,0 +1,66 @@
+.icon {
+    border: 1px solid black;
+    border-radius: 35px;
+    background-color: white;
+    margin-left: 1%;
+    padding: 3px 9px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.bt {
+    margin-left: 4%;
+}
+
+.sbt {
+    margin-left: 4%;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #20728d;
+}
+  
+.button2:hover {
+    background-color: #20728d;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    font-weight: 500;
+    color: grey;
+}
+
+.post {
+    font-size: 100%;
+}
+
+.post-content {
+    margin-top: 2%;
+    border-top: 1px solid #ccc;
+}
+
+.likes {
+    border-right: 1px solid #ccc;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="../logo-2.jpeg" width="70" height="70" class="d-inline-block align-top" alt="">
+            <b style="color: #696969;vertical-align: middle; font-size: larger;">KONNEKT  <sub><sub style="font-size: medium;">~Connect, Bond and Grow Together</sub></sub></b>
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item menu-item">
+              <% if(active == ""){ %>
+                <a class="nav-link active"  href="/adminDashboard/">View Grievances</a>
+              <% }
+              else{ %>
+                <a class="nav-link"  href="/adminDashboard/">View Grievances</a>
+              <% }%>
+            </li>
+            <li class="nav-item menu-item">
+              <% if(active == ""){ %>
+                <a class="nav-link active"  href="/adminDashboard/events">Events</a>
+              <% }
+              else{ %>
+                <a class="nav-link"  href="/adminDashboard/events">Events</a>
+              <% }%>
+            </li>
+            <li class="nav-item menu-item">
+              <% if(active == ""){ %>
+                <a class="nav-link active"  href="/adminDashboard/addevents">Add Events</a>
+              <% }
+              else{ %>
+                <a class="nav-link"  href="/adminDashboard/addevents">Add Events</a>
+              <% }%>
+            </li>
+            <li class="nav-item menu-item">
+              <% if(active == ""){ %>
+                <a class="nav-link active"  href="/adminDashboard/addpastevents">Add Past Events</a>
+              <% }
+              else{ %>
+                <a class="nav-link"  href="/adminDashboard/addpastevents">Add Past Events</a>
+              <% }%>
+            </li>
+          </ul>
+        </div>
+        <a class="btn" style="border: 1px solid black; border-radius: 25px;" role="button"  href="/notifications"><i class="fa fa-bell fa-lg"></i></a> &nbsp;
+          <div class="btn-group">
+            <a class="btn" style="border: 1px solid black; border-radius: 25px;" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="fa fa-user fa-lg" style="color: black;">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Name</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="">Profile Details</a>
+              <div class="dropdown-divider"></div>
+              <form action="/logout" method="post"  class="form-inline">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <button class="btn btn-danger" style="color: white;" type="submit"><i class="fas fa-sign-out-alt" style="font-size: 105%;"></i>&nbsp;&nbsp;Logout</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <body>
+      
+    </body>
+ 

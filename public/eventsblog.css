@@ -1,0 +1,23 @@
+body {
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blogs {
+    background-color: white;
+    margin-top: 2%;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    margin-left: 2%;
+    font-size: 125%;
+}

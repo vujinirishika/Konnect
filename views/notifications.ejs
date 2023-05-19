@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .notifications {
+            border: 1px solid #ccc;
+            margin-top: 2%;
+        }
+        .noti-text {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <%- include("header", {active: "", name: name}); %>
+    <% for(let i = 0; i < user.notifications.length; i++) { %>
+        <div class="notifications col-12 col-md-10 offset-md-1">
+            <div class="noti-text">
+                <%= user.notifications[i] %>
+            </div>
+        </div>
+    <% } %>
+</body>
+</html>

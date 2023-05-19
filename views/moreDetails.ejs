@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../moreDetails.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header", {active: "", name: name}); %>
+    <a href="/marketplace/books" class="btn btn-info mt-4 offset-md-1" role="button">back</a>
+    <div class="mt">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-2">
+                <img src="../<%= item.images[0] %>" height="100%" width="60%">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Seller Name:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.name %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Seller email:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.email%>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Seller mobile number:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.mno %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Item name:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.itemname %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Original price:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.originalprice %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Final price:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.finalprice %>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 heading">
+                        Description:
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <%= item.description %>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-2 col-md-2 offset-md-1">
+                        <a href="tel:8882192787"><i class="black fa fa-phone fa-2x"></i></a>
+                    </div>
+                    <div class="col-2 col-md-2">
+                        <a href="mailto: neelavenkatganesh16@gmail.com"><i class="black fa fa-envelope fa-2x"></i></a>
+                    </div>
+                    <div class="col-2 col-md-2">
+                        <form action="/sendmsg/<%= item._id %>" method="post">
+                            <button type="submit" class="btn"><i class="green fa fa-whatsapp fa-3x"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

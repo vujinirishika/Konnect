@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header", {active: ""}); %>
+<div style="margin-top: 3%;">
+    <h3 style="color:black"><b>Present Events</b></h3>
+    <% if(pevents!=null) { %>
+    
+    <table class="table table-bordered" style="text-align: center;margin-left:auto;margin-right:auto;">
+    <tr>
+        <th>Event name</th>
+        <th>Event date</th>
+        <th>Registration end date</th>
+        <th>Description</th>
+        <th>Registration link</th>
+    </tr>
+    <% pevents.forEach(function(item){ %>
+    <tr>
+        <td><%= item.event_name%></td>
+        <td><%= item.event_date %></td>
+        <td><%= item.registration_end_date%></td>
+        <td><%= item.event_desc%></td>
+        <td ><a role="button" class="btn btn-success" href=<%= item.registration_link %> >Click here</td>
+    </tr>
+    <% }) %>
+    </table>
+    <% } %>
+</div>
+</body>
+</html>
